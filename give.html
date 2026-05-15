@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Give | Elevation NG</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header"> 
+        <div class="utility-bar">
+            <div class="utility-content">
+                <div class="location-picker"><span>EXPLORE LOCATIONS</span></div>
+                <div class="utility-links">
+                    <a href="#">WATCH LIVE</a>
+                    <a href="#">RESOURCES</a>
+                    <a href="#">CONTACT</a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://img.sanishtech.com/u/1c0983b16f705aad278ac29b4a04c383.jpg" alt="Logo">
+                <span>ELEVATION NG</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="sermons.html">Sermons</a></li>
+                <li><a href="give.html" class="nav-btn">Give</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Give Hero -->
+    <section class="page-hero" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=2070') center/cover;">
+        <div class="hero-content">
+            <h1>Giving</h1>
+            <p>Your generosity makes a difference in lives across the globe.</p>
+        </div>
+    </section>
+
+    <!-- Giving Options Grid -->
+    <section class="container reveal">
+        <div class="giving-grid">
+            <div class="give-card">
+                <div class="give-icon">💳</div>
+                <h3>Give Online</h3>
+                <p>Safe and secure one-time or recurring giving using your debit or credit card.</p>
+                <a href="#form" class="cta-btn">Give Now</a>
+            </div>
+            <div class="give-card">
+                <div class="give-icon">📱</div>
+                <h3>Mobile App</h3>
+                <p>Download the Elevation App for a seamless giving experience on the go.</p>
+                <a href="#" class="cta-btn secondary">App Store</a>
+            </div>
+            <div class="give-card">
+                <div class="give-icon">🏦</div>
+                <h3>Bank Transfer</h3>
+                <p>Direct transfers to our ministry accounts for Tithes, Offerings, and Outreach.</p>
+                <a href="#" class="cta-btn secondary">View Accounts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Giving Form -->
+    <section id="form" class="give-form-section reveal container">
+        <div class="form-wrapper">
+            <h2>Complete Your Gift</h2>
+            <form class="give-form">
+                <div class="input-group">
+                    <label>Gift Amount</label>
+                    <input type="number" placeholder="₦ 0.00" required>
+                </div>
+                <div class="input-group">
+                    <label>Fund</label>
+                    <select>
+                        <option>Tithe</option>
+                        <option>Offering</option>
+                        <option>Global Outreach</option>
+                        <option>Building Fund</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="email@example.com" required>
+                </div>
+                <button type="submit" class="cta-btn" style="width: 100%;">Continue to Payment</button>
+            </form>
+            <p class="secure-note">🔒 Your transaction is secured with 256-bit encryption.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Elevation NG. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) { entry.target.classList.add('active'); }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

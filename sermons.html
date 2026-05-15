@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Sermons | Elevation NG</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header"> 
+        <div class="utility-bar">
+            <div class="utility-content">
+                <div class="location-picker"><span>EXPLORE LOCATIONS</span></div>
+                <div class="utility-links">
+                    <a href="#">WATCH LIVE</a>
+                    <a href="#">RESOURCES</a>
+                    <a href="#">CONTACT</a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://img.sanishtech.com/u/1c0983b16f705aad278ac29b4a04c383.jpg" alt="Logo">
+                <span>ELEVATION NG</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="sermons.html">Sermons</a></li>
+                <li><a href="give.html" class="nav-btn">Give</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Featured Sermon -->
+<section class="featured-sermon container">
+    <div class="section-text">
+        <h2 class="section-title" style="text-align: left;">Latest Message</h2>
+    </div>
+    <div class="main-video-container">
+        <!-- Featured Sermon -->
+<section class="featured-sermon container">
+    <div class="section-text">
+        <h2 class="section-title" style="text-align: left;">Latest Message</h2>
+    </div>
+    <div class="main-video-container">
+       <div class="main-video-container">
+    <iframe 
+        width="100%" 
+        height="500" 
+        src="https://www.youtube.com/embed/4Eg_di-O8nM" 
+        title="Elevation Message" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+    <div class="main-video-info">
+        <span class="series-tag">FEATURED MESSAGE</span>
+        <h2>The Power of Persistence</h2>
+        <p>Pastor Steven Furtick</p>
+        <div class="video-actions">
+            <a href="#" class="cta-btn">Download Notes</a>
+            <a href="#" class="cta-btn secondary">Share Message</a>
+        </div>
+    </div>
+</div>
+
+    <!-- Archives / Grid Section -->
+    <section class="container reveal">
+        <div class="archive-header">
+            <h2 class="section-title" style="text-align: left;">Recent Messages</h2>
+            <div class="search-box">
+                <input type="text" placeholder="Search by keyword or pastor...">
+            </div>
+        </div>
+
+        <div class="sermon-grid">
+            <!-- Sermon 1 -->
+            <div class="s-archive-card">
+                <div class="s-thumb">
+                    <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=2070" alt="Sermon Thumbnail">
+                    <div class="play-overlay">▶</div>
+                </div>
+                <div class="s-content">
+                    <h3>Winning the War in Your Mind</h3>
+                    <p>May 20, 2026</p>
+                </div>
+            </div>
+            <!-- Sermon 2 -->
+            <div class="s-archive-card">
+                <div class="s-thumb">
+                    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071" alt="Sermon Thumbnail">
+                    <div class="play-overlay">▶</div>
+                </div>
+                <div class="s-content">
+                    <h3>Focus On The Finished Work</h3>
+                    <p>May 13, 2026</p>
+                </div>
+            </div>
+            <!-- Sermon 3 -->
+            <div class="s-archive-card">
+                <div class="s-thumb">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070" alt="Sermon Thumbnail">
+                    <div class="play-overlay">▶</div>
+                </div>
+                <div class="s-content">
+                    <h3>Don't Stop At The Jordan</h3>
+                    <p>May 06, 2026</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Elevation NG. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) { entry.target.classList.add('active'); }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

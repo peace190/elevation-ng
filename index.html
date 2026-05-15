@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Elevation NG | Welcome Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header"> 
+        <div class="utility-bar">
+            <div class="utility-content">
+                <div class="location-picker">
+                    <span>EXPLORE LOCATIONS</span>
+                </div>
+                <div class="utility-links">
+                    <a href="#">WATCH LIVE</a>
+                    <a href="#">RESOURCES</a>
+                    <a href="#">CONTACT</a>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://img.sanishtech.com/u/1c0983b16f705aad278ac29b4a04c383.jpg" alt="Logo">
+                <span>ELEVATION NG</span>
+            </div>
+            
+            <!-- Hamburger Menu -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="sermons.html">Sermons</a></li>
+                <li><a href="give.html" class="nav-btn">Give</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="https://ik.imagekit.io/9x6qw35bj/0.0-211.2.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <div class="live-badge">● LIVE THIS SUNDAY</div>
+            <h1>Welcome to Elevation NG</h1>
+            <p>Experience God. Build Community. Change Lives.</p>
+            <div class="hero-btns">
+                <a href="#new" class="cta-btn">I'm New Here</a>
+                <a href="#sermons" class="cta-btn secondary">Watch Latest</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience-section reveal container">
+        <div class="experience-header">
+            <h2>Find the right experience for you.</h2>
+            <p>No matter where you are, online or in person, become a part of all God is doing.</p>
+        </div>
+
+        <div class="experience-grid">
+            <div class="experience-item">
+                <div class="icon">🏢</div>
+                <h3>Physical Campus</h3>
+                <p>Worship with us in person at one of our physical campuses.</p>
+                <a href="#" class="find-link">Find a location &rsaquo;</a>
+            </div>
+
+            <div class="experience-item">
+                <div class="icon">📺</div>
+                <h3>Live Streams</h3>
+                <p>eFam is our online community who stream church from wherever they are.</p>
+                <a href="#" class="find-link">Find a time &rsaquo;</a>
+            </div>
+
+            <div class="experience-item">
+                <div class="icon">👥</div>
+                <h3>Watch Party</h3>
+                <p>Watch Parties are groups of eFam that stream the worship experience together.</p>
+                <a href="#" class="find-link">Find a watch party &rsaquo;</a>
+            </div>
+
+            <div class="experience-item">
+                <div class="icon">🌍</div>
+                <h3>Pop-Up</h3>
+                <p>A Pop-Up is where we bring church to different cities across the nation.</p>
+                <a href="#" class="find-link">Find a pop-up &rsaquo;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ministry Section -->
+    <section class="container reveal">
+        <div class="section-text">
+            <h2 class="section-title">How To Get Involved</h2>
+            <p>See how God can use your gifts to make an eternal impact.</p>
+        </div>
+        
+        <div class="ministry-grid">
+            <div class="m-card">
+                <img src="https://content.elevationchurch.org/images/home_page_get_involved__volunteer.jpeg?width=384&format=auto" alt="Volunteer">
+                <div class="m-overlay">
+                    <h3>Volunteer</h3>
+                </div>
+            </div>
+            <div class="m-card">
+                <img src="https://content.elevationchurch.org/images/home_page_get_involved__lead.jpeg?width=384&format=auto" alt="Lead">
+                <div class="m-overlay">
+                    <h3>Lead</h3>
+                </div>
+            </div>
+            <div class="m-card">
+                <img src="https://content.elevationchurch.org/images/home_page_get_involved__careers.jpeg?width=384&format=auto" alt="Jobs">
+                <div class="m-overlay">
+                    <h3>Jobs</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="new" class="new-here reveal container">
+        <div class="section-text">
+            <h2 class="section-title">New Here?</h2>
+            <p>We'd love to connect with you and help you get started.</p>
+        </div>
+        <div class="center-btn">
+            <a href="visit.html" class="cta-btn">Plan Your Visit</a>
+        </div>
+    </section>
+
+    <section id="sermons" class="sermon-highlight reveal container">
+        <h2 class="section-title">Latest Message</h2>
+        <div class="sermon-card">
+            <video controls poster="images/sermon-thumbnail.jpg">
+                <source src="https://ik.imagekit.io/9x6qw35bj/0.0-178.7.mp4" type="video/mp4">
+            </video>
+            <div class="sermon-info">
+                <h3>You Can Change The End</h3>
+                <p>Pastor Steven Furtick</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="events reveal container">
+        <h2 class="section-title">Upcoming Events</h2>
+        <div class="event-grid">
+            <div class="event-item">
+                <div class="date">MAY 03</div>
+                <h3>Sunday Service</h3>
+                <p>9:00 AM • Main Sanctuary</p>
+            </div>
+            <div class="event-item">
+                <div class="date">MAY 08</div>
+                <h3>Youth Night</h3>
+                <p>Friday 6:00 PM • Creative Hub</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Elevation NG. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Update year
+        const yearEl = document.getElementById('year');
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const menu = document.querySelector('#mobile-menu');
+        const menuLinks = document.querySelector('.nav-links');
+        if (menu) {
+            menu.addEventListener('click', () => {
+                menu.classList.toggle('is-active');
+                menuLinks.classList.toggle('active');
+            });
+        }
+
+        // Scroll Reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

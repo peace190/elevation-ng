@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>About Us | Elevation NG</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Reuse the Header from index.html for consistency -->
+    <header class="main-header"> 
+        <div class="utility-bar">
+            <div class="utility-content">
+                <div class="location-picker"><span>EXPLORE LOCATIONS</span></div>
+                <div class="utility-links">
+                    <a href="#">WATCH LIVE</a>
+                    <a href="#">RESOURCES</a>
+                    <a href="#">CONTACT</a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://img.sanishtech.com/u/1c0983b16f705aad278ac29b4a04c383.jpg" alt="Logo">
+                <span>ELEVATION NG</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="sermons.html">Sermons</a></li>
+                <li><a href="give.html" class="nav-btn">Give</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Hero -->
+    <section class="page-hero" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1510076857177-7470076d4098?q=80&w=2072') center/cover;">
+        <div class="hero-content">
+            <h1>Our Mission</h1>
+            <p>So that people far from God will be raised to life in Christ.</p>
+        </div>
+    </section>
+
+    <!-- Mission Split Section -->
+    <section class="container reveal">
+        <div class="mission-split">
+            <div class="mission-text">
+                <h2 class="section-title" style="text-align: left;">Who We Are</h2>
+                <p>Elevation NG exists to help you experience God, build community with others, and change the world around you. We believe that no matter your background, you have a place here.</p>
+                <br>
+                <p>Founded with a vision to see lives transformed, we operate across multiple locations in Nigeria and globally through our online eFam community.</p>
+            </div>
+            <div class="mission-image">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070" alt="Church Community">
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="values-section reveal container">
+        <h2 class="section-title">Our Core Values</h2>
+        <div class="values-grid">
+            <div class="value-item">
+                <span>01</span>
+                <h3>We Are All About The One</h3>
+                <p>We will do anything short of sin to reach people who don't know Jesus.</p>
+            </div>
+            <div class="value-item">
+                <span>02</span>
+                <h3>We Are Builders</h3>
+                <p>We are not consumers; we are contributors. We use our hands to build the house.</p>
+            </div>
+            <div class="value-item">
+                <span>03</span>
+                <h3>We See Through The Eyes Of Faith</h3>
+                <p>We believe God for the impossible and expect Him to move in our lives.</p>
+            </div>
+            <div class="value-item">
+                <span>04</span>
+                <h3>We Bring Our Best</h3>
+                <p>Excellence honors God and inspires people.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Believe Section -->
+    <section class="belief-section reveal container">
+        <div class="section-text">
+            <h2 class="section-title">What We Believe</h2>
+            <p>Our beliefs are grounded in the Bible and centered on Jesus Christ.</p>
+        </div>
+        
+        <div class="belief-grid">
+            <div class="belief-item">
+                <h3>The Bible</h3>
+                <p>We believe the Bible is the inspired Word of God and the final authority for all matters of faith and life.</p>
+            </div>
+            <div class="belief-item">
+                <h3>The Trinity</h3>
+                <p>We believe in one God who exists eternally in three persons: Father, Son, and Holy Spirit.</p>
+            </div>
+            <div class="belief-item">
+                <h3>Salvation</h3>
+                <p>We believe that salvation is a gift from God, received through faith in Jesus Christ and His finished work on the cross.</p>
+            </div>
+            <div class="belief-item">
+                <h3>The Church</h3>
+                <p>We believe the church is the body of Christ, a community of believers called to love God and serve the world.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Leadership Section (Updated with your links) -->
+    <section class="container reveal" style="background: #050505;">
+        <h2 class="section-title">Our Leadership</h2>
+        <div class="leadership-grid">
+            <div class="leader-card">
+                <img src="https://content.elevationchurch.org/images/ec-about-sermon-(1).jpeg?width=828&format=auto" alt="Lead Pastor">
+                <h3>Steven Furtick</h3>
+                <p>Founder & Lead Pastor</p>
+            </div>
+            <div class="leader-card">
+                <img src="https://img.sanishtech.com/u/3201265121feec5c950aa5bb2b3cc795.webp" alt="Pastor">
+                <h3>Holly Furtick</h3>
+                <p>Co-Founder</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Elevation NG. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) { entry.target.classList.add('active'); }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
