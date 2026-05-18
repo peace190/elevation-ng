@@ -22,9 +22,16 @@
         </div>
         <nav class="navbar">
             <div class="logo">
-                <img src="https://img.sanishtech.com/u/1c0983b16f705aad278ac29b4a04c383.jpg" alt="Logo">
+                <img src="https://img.sanishtech.com/u/6a5d5f1891a5ef6978d27839b1085aa9.jpg" alt="Logo">
                 <span>ELEVATION NG</span>
             </div>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -34,7 +41,6 @@
         </nav>
     </header>
 
-    <!-- Give Hero -->
     <section class="page-hero" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=2070') center/cover;">
         <div class="hero-content">
             <h1>Giving</h1>
@@ -42,7 +48,6 @@
         </div>
     </section>
 
-    <!-- Giving Options Grid -->
     <section class="container reveal">
         <div class="giving-grid">
             <div class="give-card">
@@ -61,12 +66,11 @@
                 <div class="give-icon">🏦</div>
                 <h3>Bank Transfer</h3>
                 <p>Direct transfers to our ministry accounts for Tithes, Offerings, and Outreach.</p>
-                <a href="#" class="cta-btn secondary">View Accounts</a>
+                <a href="#bank-transfer" class="cta-btn secondary">View Accounts</a>
             </div>
         </div>
     </section>
 
-    <!-- Simple Giving Form -->
     <section id="form" class="give-form-section reveal container">
         <div class="form-wrapper">
             <h2>Complete Your Gift</h2>
@@ -86,11 +90,42 @@
                 </div>
                 <div class="input-group">
                     <label>Email Address</label>
-                    <input type="email" placeholder="email@example.com" required>
+                    <input type="email" placeholder="email@example.com?" required>
                 </div>
                 <button type="submit" class="cta-btn" style="width: 100%;">Continue to Payment</button>
             </form>
             <p class="secure-note">🔒 Your transaction is secured with 256-bit encryption.</p>
+        </div>
+    </section>
+
+    <section id="bank-transfer" class="bank-transfer-section container reveal">
+        <h2 class="section-title">Direct Bank Transfer</h2>
+        <p class="section-subtitle">You can also give via direct transfer using any of the accounts below. Tap the account number to copy it instantly.</p>
+        
+        <div class="bank-grid">
+            <div class="bank-card" onclick="copyAccount('2395532795', this)">
+                <div class="bank-logo-placeholder">UBA</div>
+                <div class="bank-details">
+                    <h3>United Bank for Africa (UBA)</h3>
+                    <div class="account-number-wrapper">
+                        <span class="account-num">2395532795</span>
+                        <span class="copy-badge">Tap to Copy</span>
+                    </div>
+                    <p class="account-name">VINCENT PEACE CHIGOZIE</p>
+                </div>
+            </div>
+
+            <div class="bank-card" onclick="copyAccount('8058412104', this)">
+                <div class="bank-logo-placeholder moniepoint">MP</div>
+                <div class="bank-details">
+                    <h3>Moniepoint MFB</h3>
+                    <div class="account-number-wrapper">
+                        <span class="account-num">8058412104</span>
+                        <span class="copy-badge">Tap to Copy</span>
+                    </div>
+                    <p class="account-name">VINCENT PEACE CHIGOZIE</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -99,16 +134,6 @@
             <p>&copy; <span id="year"></span> Elevation NG. All rights reserved.</p>
         </div>
     </footer>
-
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) { entry.target.classList.add('active'); }
-            });
-        }, { threshold: 0.1 });
-        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-    </script>
 
     <script src="script.js"></script>
 </body>
