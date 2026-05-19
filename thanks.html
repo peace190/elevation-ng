@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Elevation NG</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .thanks-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 70vh;
+            text-align: center;
+            padding: 20px;
+        }
+        .success-icon {
+            font-size: 4rem;
+            color: #2ed573;
+            margin-bottom: 20px;
+            animation: pop 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        @keyframes pop { 0% { transform: scale(0); } 100% { transform: scale(1); } }
+    </style>
+</head>
+<body style="background: #0a0a0a; color: #fff;">
+    <div class="thanks-container">
+        <div class="success-icon">✓</div>
+        <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Submission Received!</h1>
+        <p style="color: #888; max-width: 500px; margin-bottom: 30px; line-height: 1.6;">Thank you for connecting with Elevation NG. Your details have been securely transmitted to our leadership team. We will be in touch shortly!</p>
+        <a href="index.html" class="cta-btn">Back To Home</a>
+    </div>
+</body>
+</html>

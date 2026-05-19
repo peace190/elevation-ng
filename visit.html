@@ -70,7 +70,8 @@
             </div>
         </div>
     </section>
-<section id="location-map" class="map-section container reveal">
+
+    <section id="location-map" class="map-section container reveal">
         <div class="map-info">
             <span class="section-tag">FIND US</span>
             <h2>Our Campus Location</h2>
@@ -89,7 +90,11 @@
                     <span class="meta-icon">📞</span>
                     <div>
                         <strong>Contact Info</strong>
-                        <p><a href="mailto:samuelleadershipteam@gmail.com?" style="color: var(--text-gray); text-decoration: none;">samuelleadershipteam@gmail.com</a> | <a href="tel:+2348058412104" style="color: var(--text-gray); text-decoration: none;">+234 805 841 2104</a></p>
+                        <p>
+                            <a href="mailto:samuelleadershipteam@gmail.com?" style="color: var(--text-gray); text-decoration: none;">samuelleadershipteam@gmail.com</a> 
+                            | 
+                            <a href="tel:+2348058412104" style="color: var(--text-gray); text-decoration: none;">+234 805 841 2104</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -98,12 +103,8 @@
                 <span>Get Driving Directions</span>
                 <span class="btn-arrow">→</span>
             </a>
-            
-            <a href="https://maps.google.com" target="_blank" class="cta-btn text-icon-btn">
-                <span>Get Driving Directions</span>
-                <span class="btn-arrow">&rarr;</span>
-            </a>
         </div>
+        
         <div class="map-wrapper">
             <div class="interactive-map-card" onclick="window.open('https://maps.google.com', '_blank')">
                 <div class="map-overlay-tint">
@@ -119,82 +120,90 @@
             </div>
         </div>
     </section>
+
     <section class="visit-form-section reveal container">
         <div class="form-wrapper">
             <h2>Let Us Know You're Coming</h2>
             <p style="text-align: center; color: #888; margin-bottom: 25px; font-size: 0.9rem;">Sign up below so our VIP host team can welcome you, hand you a gift, and help guide you through the building!</p>
-            <form class="visit-form">
+            
+            <form action="https://formspree.io/f/mkoegblv" method="POST" class="visit-form">
+                <input type="hidden" name="_next" value="https://peace190.github.io/elevation-ng/thanks.html">
+                
                 <div class="input-group">
                     <label>Full Name</label>
-                    <input type="text" placeholder="John Doe" required>
+                    <input type="text" name="name" placeholder="John Doe" required>
                 </div>
+                
                 <div class="input-group">
                     <label>Email Address</label>
-                    <input type="email" placeholder="john@example.com?" required>
+                    <input type="email" name="email" placeholder="john@example.com?" required>
                 </div>
+                
                 <div class="input-group">
                     <label>Preferred Service Time</label>
-                    <select>
-                        <option>Sunday — 9:00 AM</option>
-                        <option>Sunday — 11:30 AM</option>
+                    <select name="service_time">
+                        <option value="9:00 AM">Sunday — 9:00 AM</option>
+                        <option value="11:30 AM">Sunday — 11:30 AM</option>
                     </select>
                 </div>
+                
                 <div class="input-group">
                     <label>Bringing Kids?</label>
-                    <select>
-                        <option>No kids this time</option>
-                        <option>Yes (1-2 children)</option>
-                        <option>Yes (3+ children)</option>
+                    <select name="bringing_kids">
+                        <option value="No">No kids this time</option>
+                        <option value="Yes (1-2)">Yes (1-2 children)</option>
+                        <option value="Yes (3+)">Yes (3+ children)</option>
                     </select>
                 </div>
+                
                 <button type="submit" class="cta-btn" style="width: 100%;">Schedule My Visit</button>
             </form>
         </div>
     </section>
 
     <section class="support-section container reveal">
-    <span class="section-tag">HELP & SUPPORT</span>
-    <h2 class="section-title">Have Questions? Get in Touch</h2>
-    <p class="section-subtitle">Our team is available to assist you. Click on any option below to call us directly or start a secure WhatsApp chat.</p>
+        <span class="section-tag">HELP & SUPPORT</span>
+        <h2 class="section-title">Have Questions? Get in Touch</h2>
+        <p class="section-subtitle">Our team is available to assist you. Click on any option below to call us directly or start a secure WhatsApp chat.</p>
 
-    <div class="support-grid">
-        <div class="support-card ng-theme">
-            <div class="support-header">
-                <span class="country-flag">🇳🇬</span>
-                <h3>Nigeria Support</h3>
+        <div class="support-grid">
+            <div class="support-card ng-theme">
+                <div class="support-header">
+                    <span class="country-flag">🇳🇬</span>
+                    <h3>Nigeria Support</h3>
+                </div>
+                <p class="support-desc">Available for direct mobile voice calls, instant call-backs, and 24/7 WhatsApp messaging.</p>
+                <div class="support-actions">
+                    <a href="https://wa.me/2348058412104" target="_blank" class="support-btn whatsapp-btn">
+                        <span>💬 WhatsApp Chat</span>
+                    </a>
+                    <a href="tel:+2348058412104" class="support-btn call-btn">
+                        <span>📞 Voice Call</span>
+                    </a>
+                </div>
             </div>
-            <p class="support-desc">Available for direct mobile voice calls, instant call-backs, and 24/7 WhatsApp messaging.</p>
-            <div class="support-actions">
-                <a href="https://wa.me/2348058412104" target="_blank" class="support-btn whatsapp-btn">
-                    <span>💬 WhatsApp Chat</span>
-                </a>
-                <a href="tel:+2348058412104" class="support-btn call-btn">
-                    <span>📞 Voice Call</span>
-                </a>
+
+            <div class="support-card us-theme">
+                <div class="support-header">
+                    <span class="country-flag">🇺🇸</span>
+                    <h3>USA Support</h3>
+                </div>
+                <p class="support-desc">Available for international voice calls, call-backs, and direct WhatsApp messaging.</p>
+                <div class="support-actions">
+                    <a href="https://wa.me/17194038032" target="_blank" class="support-btn whatsapp-btn">
+                        <span>💬 WhatsApp Chat</span>
+                    </a>
+                    <a href="tel:+17194038032" class="support-btn call-btn">
+                        <span>📞 Voice Call</span>
+                    </a>
+                </div>
             </div>
         </div>
-
-        <div class="support-card us-theme">
-            <div class="support-header">
-                <span class="country-flag">🇺🇸</span>
-                <h3>USA Support</h3>
-            </div>
-            <p class="support-desc">Available for international voice calls, call-backs, and direct WhatsApp messaging.</p>
-            <div class="support-actions">
-                <a href="https://wa.me/17194038032" target="_blank" class="support-btn whatsapp-btn">
-                    <span>💬 WhatsApp Chat</span>
-                </a>
-                <a href="tel:+17194038032" class="support-btn call-btn">
-                    <span>📞 Voice Call</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
     <footer>
         <div class="footer-content">
-            <p>&copy; <span id="year"></span> Elevation NG. All rights reserved.</p>
+            <p>© <span id="year"></span> Elevation NG. All rights reserved.</p>
         </div>
     </footer>
 
