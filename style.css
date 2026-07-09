@@ -1394,6 +1394,14 @@ html {
     color: #000000 !important;
 }
 
+.mobile-menu-toggle .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #FFFFFF; /* High contrast white against your dark blue header */
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
 /* ==========================================================================
    GLOBAL RESPONSIVE VIEWPORT BREAKPOINTS (Mobile and Tablet layout fixes)
    ========================================================================== */
